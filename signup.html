@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="Logo" class="logo">
+        <div class="left">
+            
+            <h2>Create an account</h2><br>
+            <p>Start your journey now with us</p>
+        </div>
+        <div class="right">
+            <div class="form-container">
+                <div class="form-box">
+                    <h1>Register</h1>
+            <form action="signup.php" method="POST">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="role">Role</label>
+                <select id="role" name="role">
+                    <option value="citizen">citizen</option>
+                    <option value="responder">responder</option>
+                    
+                    
+                </select>
+            </div><br>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="designation">Location</label>
+                <input type="text" id="designation" name="designation">
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age">
+            </div>
+            
+            <div class="form-group">
+                <label for="bio">Bio</label>
+                <textarea id="bio" name="bio" rows="2"></textarea>
+            </div><br>
+            <button type="submit">Register</button>
+        </form>
+                        <p>Already have an account? <a href="login.html">Log in</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
